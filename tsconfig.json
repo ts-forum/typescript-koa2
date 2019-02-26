@@ -1,0 +1,22 @@
+{
+  "compilerOptions":{
+    "module": "commonjs", // 指生成那种模块代码
+    "noImplicitAny": true, // 在表达式和声明上有隐含的 any类型时报错。
+    "sourceMap": true,
+    "moduleResolution": "node", // 模板解析策略，Classis和node两种
+    "isolatedModules": false,
+    "target": "es5", // 输出目标为es5
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "inlineSources": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true, // 装饰器
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "lib": ["es2015", "dom"] // 编译是需要引入的哭
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
